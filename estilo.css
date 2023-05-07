@@ -87,38 +87,42 @@ body {
 
    /* Estilos para dispositivos menores */
 
-   @media only screen and (max-width: 768px) {
-        body {
-        font-size: 14pt;
-        }
-        
-        section {
-        width: 90%;
-        margin: auto;
-        }
-        
-        .botaonum,
-        .botaooper {
-        width: 40px;
-        height: 40px;
-        font-size: 16px;
-        margin: 3px;
-        }
-        
-        .botaolimpar {
-        width: 40px;
-        height: 40px;
-        font-size: 16px;
-        left: -55px;
-        }
-        
-        #link {
-        width: 40px;
-        height: 40px;
-        bottom: 5%;
-        left: 85%;
-        }
-   }
+  /* Estilos para dispositivos móveis */
+@media only screen and (max-width: 767px) {
+    section {
+      width: 90%;
+      margin: auto;
+      position: relative;
+    }
   
+    .botaolimpar {
+      left: -107px;
+    }
+  
+    #link {
+      bottom: 5%;
+      left: 85%;
+    }
+    
+    .botaonum,
+    .botaooper {
+      width: 30px;
+      height: 30px;
+      margin: 3px;
+      font-size: 12px;
+    }
+    
+    .botaolimpar {
+      width: 30px;
+      height: 30px;
+      font-size: 12px;
+      left: -62px;
+    }
+    
+    .resultado {
+      width: 100px;
+      height: 15px;
+    }
+  }
 
   
