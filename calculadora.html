@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculadora</title>
+        <link rel="stylesheet" href="estilo.css">
+        
+    </head>
+    <body>
+        <h1 class="titulo">
+            Calculadora
+        </h1>
+        <section>
+            <div class="container">
+                <form>
+                    <input type="text" class="resultado" id="resultado" disabled> <!--A propriedade disabled torna o elemento inoperante-->
+                    <br>
+                    <input type="button" class= "botaonum" value="1" onclick="adicionarNumero('1')"> <!--Parametro para acionar a função quando o número é selecionado-->
+                    <input type="button" class= "botaonum" value="2" onclick="adicionarNumero('2')"> <!--Fica definido então que quando se chama assim o parâmetro é 1 -->
+                    <input type="button"  class= "botaonum" value="3" onclick="adicionarNumero('3')">
+                    <input type="button" class= "botaooper" value="+" onclick="adicionarOperador('+')">
+                    <br>
+                    <input type="button" class= "botaonum" value="4" onclick="adicionarNumero('4')">
+                    <input type="button" class= "botaonum" value="5" onclick="adicionarNumero('5')">
+                    <input type="button" class= "botaonum" value="6" onclick="adicionarNumero('6')">
+                    <input type="button" class= "botaooper" value="-" onclick="adicionarOperador('-')">
+                    <br>
+                    <input type="button" class= "botaonum" value="7" onclick="adicionarNumero('7')">
+                    <input type="button" class= "botaonum" value="8" onclick="adicionarNumero('8')">
+                    <input type="button" class= "botaonum" value="9" onclick="adicionarNumero('9')">
+                    <input type="button" class= "botaooper" value="*" onclick="adicionarOperador('*')">
+                    <br>
+                    <input type="button" class= "botaonum" value="0" onclick="adicionarNumero('0')">
+                    <input type="button" class= "botaooper" value="." onclick="adicionarDecimal()">
+                    <input type="button" class= "botaooper" value="=" onclick="calcular()"> 
+                    <input type="button" class= "botaooper" value="/" onclick="adicionarOperador('/')">
+                    <br>
+                    <input type="button" class= "botaolimpar" value="C" onclick="limpar()">
+                </form>
+            </div>
+            <div >
+                <a href="https://github.com/HelyfAvila/Calculadora"> <img src="imagens/github.png" id="link" alt="Link Código Projeto"></a>
+            </div>
+        </section>
+        <footer>
+            <p>&copy; Helyf Avila</p>
+        </footer>
+        <script src="calculadora.js"></script>
+    </body>
+</html>
