@@ -12,8 +12,7 @@ body {
     background: linear-gradient(to bottom right, #303030, #1a1a1a);
     border-radius: 10px;
     padding: 15px;
-    width: 90%;
-    max-width: 500px;
+    width: 500px;
     margin: auto;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.363);
     
@@ -87,10 +86,18 @@ body {
     
   }
   @media (max-width: 500px) {
+    /* Estilos a serem aplicados em telas menores que 500px */
+    section {
+      /* Exemplo de alteração de estilo para tornar a seção mais estreita */
+      width: 80%;
+    }
     .botaonum, .botaooper {
+      /* Exemplo de alteração de estilo para tornar os botões menores */
       width: 30px;
       height: 30px;
       font-size: 14px;
     }
   }
+  
+
   
