@@ -82,22 +82,43 @@ body {
     position: absolute;
     bottom: 115px;
     left:566px;
-   
-    
-  }
-  @media (max-width: 500px) {
-    /* Estilos a serem aplicados em telas menores que 500px */
-    section {
-      /* Exemplo de alteração de estilo para tornar a seção mais estreita */
-      width: 80%;
-    }
-    .botaonum, .botaooper {
-      /* Exemplo de alteração de estilo para tornar os botões menores */
-      width: 30px;
-      height: 30px;
-      font-size: 14px;
-    }
-  }
+   }
+   /* Estilos para dispositivos menores */
+
+   /* Estilos para dispositivos menores */
+
+   @media only screen and (max-width: 768px) {
+        body {
+        font-size: 14pt;
+        }
+        
+        section {
+        width: 90%;
+        margin: auto;
+        }
+        
+        .botaonum,
+        .botaooper {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+        margin: 3px;
+        }
+        
+        .botaolimpar {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+        left: -55px;
+        }
+        
+        #link {
+        width: 40px;
+        height: 40px;
+        bottom: 5%;
+        left: 85%;
+        }
+   }
   
 
   
